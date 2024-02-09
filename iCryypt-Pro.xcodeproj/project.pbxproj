@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47046FA52B747CCD0044E9CC /* CoinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47046FA42B747CCD0044E9CC /* CoinService.swift */; };
+		47046FA72B748F680044E9CC /* HomeControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47046FA62B748F680044E9CC /* HomeControllerViewModel.swift */; };
+		4743FB222B66CB9D0016FBFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4743FB212B66CB9D0016FBFA /* AppDelegate.swift */; };
+		4743FB242B66CB9D0016FBFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4743FB232B66CB9D0016FBFA /* SceneDelegate.swift */; };
+		4743FB262B66CB9D0016FBFA /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4743FB252B66CB9D0016FBFA /* HomeController.swift */; };
+		4743FB2B2B66CB9F0016FBFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4743FB2A2B66CB9F0016FBFA /* Assets.xcassets */; };
+		4743FB2E2B66CB9F0016FBFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4743FB2C2B66CB9F0016FBFA /* LaunchScreen.storyboard */; };
+		4743FB3C2B66D0E70016FBFA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4743FB3B2B66D0E70016FBFA /* Constants.swift */; };
+		4743FB3E2B6800B70016FBFA /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4743FB3D2B6800B70016FBFA /* Coin.swift */; };
+		4743FB402B683CD70016FBFA /* CoinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4743FB3F2B683CD70016FBFA /* CoinCell.swift */; };
+		4743FB422B6991240016FBFA /* ViewCryptoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4743FB412B6991240016FBFA /* ViewCryptoController.swift */; };
+		4743FB442B6A0E9B0016FBFA /* ViewCryptoControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4743FB432B6A0E9B0016FBFA /* ViewCryptoControllerViewModel.swift */; };
+		4743FB462B6C66C80016FBFA /* CoinError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4743FB452B6C66C80016FBFA /* CoinError.swift */; };
+		4743FB482B7438660016FBFA /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4743FB472B7438660016FBFA /* HTTP.swift */; };
+		4743FB4A2B74409B0016FBFA /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4743FB492B74409B0016FBFA /* Endpoint.swift */; };
+		D9313D0E410B2A698785F375 /* Pods_iCryypt_Pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913B26E715706E65488EBDBF /* Pods_iCryypt_Pro.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		47046FA42B747CCD0044E9CC /* CoinService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinService.swift; sourceTree = "<group>"; };
+		47046FA62B748F680044E9CC /* HomeControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerViewModel.swift; sourceTree = "<group>"; };
+		4743FB1E2B66CB9D0016FBFA /* iCryypt-Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iCryypt-Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4743FB212B66CB9D0016FBFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4743FB232B66CB9D0016FBFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4743FB252B66CB9D0016FBFA /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		4743FB2A2B66CB9F0016FBFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4743FB2D2B66CB9F0016FBFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4743FB2F2B66CB9F0016FBFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4743FB3B2B66D0E70016FBFA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4743FB3D2B6800B70016FBFA /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		4743FB3F2B683CD70016FBFA /* CoinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCell.swift; sourceTree = "<group>"; };
+		4743FB412B6991240016FBFA /* ViewCryptoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCryptoController.swift; sourceTree = "<group>"; };
+		4743FB432B6A0E9B0016FBFA /* ViewCryptoControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCryptoControllerViewModel.swift; sourceTree = "<group>"; };
+		4743FB452B6C66C80016FBFA /* CoinError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinError.swift; sourceTree = "<group>"; };
+		4743FB472B7438660016FBFA /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		4743FB492B74409B0016FBFA /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		913B26E715706E65488EBDBF /* Pods_iCryypt_Pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iCryypt_Pro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52F404C3EE8D5B7195E2BAF /* Pods-iCryypt-Pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCryypt-Pro.release.xcconfig"; path = "Target Support Files/Pods-iCryypt-Pro/Pods-iCryypt-Pro.release.xcconfig"; sourceTree = "<group>"; };
+		D0CB038CB8D4C008B8CB8251 /* Pods-iCryypt-Pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCryypt-Pro.debug.xcconfig"; path = "Target Support Files/Pods-iCryypt-Pro/Pods-iCryypt-Pro.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4743FB1B2B66CB9D0016FBFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9313D0E410B2A698785F375 /* Pods_iCryypt_Pro.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4743FB152B66CB9D0016FBFA = {
+			isa = PBXGroup;
+			children = (
+				4743FB202B66CB9D0016FBFA /* iCryypt-Pro */,
+				4743FB1F2B66CB9D0016FBFA /* Products */,
+				4A253F2B45CC28ED4D1192E2 /* Pods */,
+				A9275BB905AFFC5F17A3F89E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4743FB1F2B66CB9D0016FBFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4743FB1E2B66CB9D0016FBFA /* iCryypt-Pro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4743FB202B66CB9D0016FBFA /* iCryypt-Pro */ = {
+			isa = PBXGroup;
+			children = (
+				4743FB352B66CD800016FBFA /* API */,
+				4743FB362B66CD930016FBFA /* Models */,
+				4743FB372B66CDA40016FBFA /* Views */,
+				4743FB382B66CDE00016FBFA /* ViewModels */,
+				4743FB392B66CDF20016FBFA /* Controllers */,
+				4743FB3A2B66CE030016FBFA /* Supporting */,
+				4743FB2F2B66CB9F0016FBFA /* Info.plist */,
+			);
+			path = "iCryypt-Pro";
+			sourceTree = "<group>";
+		};
+		4743FB352B66CD800016FBFA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4743FB472B7438660016FBFA /* HTTP.swift */,
+				4743FB492B74409B0016FBFA /* Endpoint.swift */,
+				47046FA42B747CCD0044E9CC /* CoinService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4743FB362B66CD930016FBFA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4743FB3D2B6800B70016FBFA /* Coin.swift */,
+				4743FB452B6C66C80016FBFA /* CoinError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4743FB372B66CDA40016FBFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4743FB3F2B683CD70016FBFA /* CoinCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4743FB382B66CDE00016FBFA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4743FB432B6A0E9B0016FBFA /* ViewCryptoControllerViewModel.swift */,
+				47046FA62B748F680044E9CC /* HomeControllerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4743FB392B66CDF20016FBFA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4743FB252B66CB9D0016FBFA /* HomeController.swift */,
+				4743FB412B6991240016FBFA /* ViewCryptoController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4743FB3A2B66CE030016FBFA /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				4743FB212B66CB9D0016FBFA /* AppDelegate.swift */,
+				4743FB232B66CB9D0016FBFA /* SceneDelegate.swift */,
+				4743FB2A2B66CB9F0016FBFA /* Assets.xcassets */,
+				4743FB2C2B66CB9F0016FBFA /* LaunchScreen.storyboard */,
+				4743FB3B2B66D0E70016FBFA /* Constants.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		4A253F2B45CC28ED4D1192E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0CB038CB8D4C008B8CB8251 /* Pods-iCryypt-Pro.debug.xcconfig */,
+				A52F404C3EE8D5B7195E2BAF /* Pods-iCryypt-Pro.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A9275BB905AFFC5F17A3F89E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				913B26E715706E65488EBDBF /* Pods_iCryypt_Pro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4743FB1D2B66CB9D0016FBFA /* iCryypt-Pro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4743FB322B66CB9F0016FBFA /* Build configuration list for PBXNativeTarget "iCryypt-Pro" */;
+			buildPhases = (
+				E6C783F7FE9A4D929CE14C70 /* [CP] Check Pods Manifest.lock */,
+				4743FB1A2B66CB9D0016FBFA /* Sources */,
+				4743FB1B2B66CB9D0016FBFA /* Frameworks */,
+				4743FB1C2B66CB9D0016FBFA /* Resources */,
+				FBFD542551A3A22BF02ECF3F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iCryypt-Pro";
+			productName = "iCryypt-Pro";
+			productReference = 4743FB1E2B66CB9D0016FBFA /* iCryypt-Pro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4743FB162B66CB9D0016FBFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					4743FB1D2B66CB9D0016FBFA = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 4743FB192B66CB9D0016FBFA /* Build configuration list for PBXProject "iCryypt-Pro" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4743FB152B66CB9D0016FBFA;
+			productRefGroup = 4743FB1F2B66CB9D0016FBFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4743FB1D2B66CB9D0016FBFA /* iCryypt-Pro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4743FB1C2B66CB9D0016FBFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4743FB2E2B66CB9F0016FBFA /* LaunchScreen.storyboard in Resources */,
+				4743FB2B2B66CB9F0016FBFA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E6C783F7FE9A4D929CE14C70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iCryypt-Pro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBFD542551A3A22BF02ECF3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iCryypt-Pro/Pods-iCryypt-Pro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iCryypt-Pro/Pods-iCryypt-Pro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iCryypt-Pro/Pods-iCryypt-Pro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4743FB1A2B66CB9D0016FBFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4743FB262B66CB9D0016FBFA /* HomeController.swift in Sources */,
+				4743FB222B66CB9D0016FBFA /* AppDelegate.swift in Sources */,
+				4743FB442B6A0E9B0016FBFA /* ViewCryptoControllerViewModel.swift in Sources */,
+				4743FB242B66CB9D0016FBFA /* SceneDelegate.swift in Sources */,
+				4743FB422B6991240016FBFA /* ViewCryptoController.swift in Sources */,
+				4743FB482B7438660016FBFA /* HTTP.swift in Sources */,
+				4743FB462B6C66C80016FBFA /* CoinError.swift in Sources */,
+				4743FB3E2B6800B70016FBFA /* Coin.swift in Sources */,
+				47046FA72B748F680044E9CC /* HomeControllerViewModel.swift in Sources */,
+				4743FB402B683CD70016FBFA /* CoinCell.swift in Sources */,
+				4743FB4A2B74409B0016FBFA /* Endpoint.swift in Sources */,
+				47046FA52B747CCD0044E9CC /* CoinService.swift in Sources */,
+				4743FB3C2B66D0E70016FBFA /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4743FB2C2B66CB9F0016FBFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4743FB2D2B66CB9F0016FBFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4743FB302B66CB9F0016FBFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4743FB312B66CB9F0016FBFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4743FB332B66CB9F0016FBFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0CB038CB8D4C008B8CB8251 /* Pods-iCryypt-Pro.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LTGW67QM3W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iCryypt-Pro/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.morante.iCryypt-Pro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4743FB342B66CB9F0016FBFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A52F404C3EE8D5B7195E2BAF /* Pods-iCryypt-Pro.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LTGW67QM3W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iCryypt-Pro/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.morante.iCryypt-Pro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4743FB192B66CB9D0016FBFA /* Build configuration list for PBXProject "iCryypt-Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4743FB302B66CB9F0016FBFA /* Debug */,
+				4743FB312B66CB9F0016FBFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4743FB322B66CB9F0016FBFA /* Build configuration list for PBXNativeTarget "iCryypt-Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4743FB332B66CB9F0016FBFA /* Debug */,
+				4743FB342B66CB9F0016FBFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4743FB162B66CB9D0016FBFA /* Project object */;
+}
