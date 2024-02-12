@@ -38,7 +38,7 @@ class ViewCryptoControllerViewModel {
         if let maxSupply = self.coin.maxSupply {
             return "Max Supply: \(maxSupply)"
         }else {
-            return "Prueba1\nPrueba2\nPrueba3\nPrueba4\nPrueba2\nPrueba3\nPrueba4\nPrueba2\nPrueba3\nPrueba4\nPrueba2\nPrueba3\nPrueba4\nPrueba2\nPrueba3\nPrueba4\nPrueba2\nPrueba3\nPrueba4\nPrueba2\nPrueba3\nPrueba4\nPrueba2\nPrueba3\nPrueba4\nPrueba2\nPrueba3\nPrueba4\nPrueba2\nPrueba3\nPrueba4\n"
+            return ""
         }
         
     }

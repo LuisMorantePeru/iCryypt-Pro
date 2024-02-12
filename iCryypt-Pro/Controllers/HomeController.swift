@@ -9,7 +9,7 @@ import UIKit
 
 //Tercer paso : refactorizar el nombre de viewcontroller a homecontroller cambiando el nombre
 
-class HomeController: UIViewController {
+class HomeController: UIViewController, UISearchControllerDelegate {
    
     //aqui probamos si ejecuta bien el proyecto
     
@@ -24,6 +24,8 @@ class HomeController: UIViewController {
         return tv
     }()
     
+    private let searchController : UISearchController = UISearchController(searchResultsController: nil )
+    
     //MARK: - LifeCycle
     //Inicializando ViewModel en HomeController
     init(_ viewModel: HomeControllerViewModel = HomeControllerViewModel()) {
@@ -37,6 +39,7 @@ class HomeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupSearchController()
         self.setupUI()
         
         self.tableView.delegate = self
@@ -96,8 +99,33 @@ class HomeController: UIViewController {
         ])
     }
     
-    //MARK: - Selectors
+    //22: funcion que permitirá buscar monedas
+    private func setupSearchController() {
+        //actualiza el contenido
+        self.searchController.searchResultsUpdater = self
+        self.searchController.obscuresBackgroundDuringPresentation = false
+        self.searchController.hidesNavigationBarDuringPresentation = false
+        self.searchController.searchBar.placeholder = "Search Cryptos"
+        
+        self.navigationItem.searchController = searchController
+        self.definesPresentationContext = false
+        self.navigationItem.hidesSearchBarWhenScrolling = false
+        
+        //cambiar el boton X cuando filtras en un searchbar
+        self.searchController.searchBar.delegate = self
+        self.searchController.searchBar.showsBookmarkButton = true
+        
+        self.searchController.searchBar.setImage(UIImage(systemName: "questionmark"),for: .bookmark, state: .normal)
+    }
 
+}
+
+//23: extendemos home para la busqueda de monedas
+//MARK: - Search Controller Functions
+extension HomeController : UISearchResultsUpdating, UISearchBarDelegate{
+    func updateSearchResults(for searchController: UISearchController){
+        self.viewModel.updateSearchController(searchBarText: searchController.searchBar.text)
+    }
 }
 
 //MARK: - TableView Functions
@@ -105,7 +133,9 @@ class HomeController: UIViewController {
 extension HomeController : UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.viewModel.coins.count
+        let inSearchMode = self.viewModel.inSearchMode(searchController)
+        return inSearchMode ? self.viewModel.filteredCoins.count :
+            self.viewModel.allCoins.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -113,9 +143,10 @@ extension HomeController : UITableViewDelegate , UITableViewDataSource {
                 fatalError("Unable to dequeue CoinCell in HomeController")
         }
         
-        let coin = self.viewModel.coins[indexPath.row]
+        let inSearchMode = self.viewModel.inSearchMode(searchController)
+        let coin = inSearchMode ? self.viewModel.filteredCoins[indexPath.row] :
+            self.viewModel.allCoins[indexPath.row]
         cell.configure(with: coin)
-        
         return cell
         
     }
@@ -130,10 +161,14 @@ extension HomeController : UITableViewDelegate , UITableViewDataSource {
         self.tableView.deselectRow(at: indexPath, animated: true)
         
         //Se pasa los datos al siguiente layout ViewCryptoController donde se muestra el detalle de cada celda
-        let coin = self.viewModel.coins[indexPath.row]
+        let inSearchMode = self.viewModel.inSearchMode(searchController)
+        let coin = inSearchMode ? self.viewModel.filteredCoins[indexPath.row] :
+            self.viewModel.allCoins[indexPath.row]
+        
         let vm = ViewCryptoControllerViewModel(coin)
         let vc = ViewCryptoController(vm)
         self.navigationController?.pushViewController(vc, animated: true)
+        
     }
     
 }
